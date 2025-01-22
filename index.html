@@ -7,45 +7,21 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <button class="menu-button">☰</button>
-        <input type="text" placeholder="Søk" class="search-bar">
-        <div class="cart-container">
-            <button class="cart-button">🛒</button>
-            <span id="cart-counter">0</span>
-        </div>
-    </header>
-    
-
-    <main>
-        
-        <div class="filter">
-            <div class="filter-container">
-                <button id="filter-button">Filter</button>
-                <div id="dropdown-menu" class="dropdown-menu">
-                    <button class="dropdown-item" data-category="all">Alle</button>
-                    <button class="dropdown-item" data-category="Snowboard">Snowboard</button>
-                    <button class="dropdown-item" data-category="Ski">Ski</button>
-                    <button class="dropdown-item" data-category="Skøyter">Skøyter</button>
-                    <button class="dropdown-item" data-category="Sko">Sko</button>
-                    <button class="dropdown-item" data-category="Hjelm">Hjelm</button>
-                </div>
-            </div>
-            
-        </div>
-        <div id="equipmentList" class="equipment-list"></div>
-    </main>
-
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Din handlekurv</h2>
-            <ul id="cart-items"></ul>
-            <button id="rent-button" class="rent-button">Bekreft leie</button>
-        </div>
-    </div>
-    
-
+    <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <header>
+    <div class="nav-menu">
+        <nav>
+        <ul>
+            <p>Equipment Rental</p>
+            <li>Equipment</li>
+            <li>Rules</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <p>Log in</p>
+        </ul>
+    </nav>
+    </div>
+    </header>
 </body>
 </html>
