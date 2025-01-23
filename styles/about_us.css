@@ -28,6 +28,8 @@ h1{
 .image-container {
     position: relative;
     display: inline-block;
+
+    width: 100%;
 }
 
 .arrow-link {
@@ -46,8 +48,10 @@ h1{
 
 
 .arrow-link::before {
-    content: '❮'; /* Arrow symbol */
-    font-size: 30px;
+    
+ content: '❮'; /* Arrow symbol */
+  font-size: 2vw;
+  margin-right: 80vw;
 }
 
 .header_background {
