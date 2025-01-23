@@ -8,7 +8,8 @@ body {
     background-color: #225686;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -21,20 +22,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background-color: rgb(255, 255, 255, 0.9);
     height: 100%;
-    width: 25%;
+    width: 40%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    height: 75%;
 }
 nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
     list-style: none;
-    gap: 5rem;
 }
 nav li{
-    margin-bottom: 1rem;
-}
-nav li:last-child{
-    margin-bottom: 0;
+    text-align: center;
 }
 nav p{
-    padding: 2rem;
+    padding: 1.75rem;
+    text-align: center;
+    background-color: #225686;
+    color: White;
+    border-radius: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
