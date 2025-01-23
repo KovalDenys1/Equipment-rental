@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-image: url(../img/BG_girl_with_snowboard.jpg);
+    background-color: #225686;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
+}
+nav ul{
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+}
+nav p{
+    background-color: #225686;
+    color: White;
+    border-radius: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
