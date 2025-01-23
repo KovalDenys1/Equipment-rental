@@ -5,7 +5,7 @@
 }
 body {
     height: 100vh;
-    background-image: url(../img/BG_girl_with_snowboard.jpg);
+    background-image: url(../img/Mountains.jpg);
     background-color: #225686;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,36 +13,99 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
-
-header {
+header{
     display: flex;
-    height: 10vh;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255, 0.9);
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: fit-content;
 }
 nav{
     display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.8);
     justify-content: space-between;
-    width: 90%;
-    height: 60%;
+    align-items: center;
+    padding: 2rem;
 }
 nav ul{
-    display: flex;
-    gap: 3.5rem;
     list-style: none;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: gray;
 }
 nav p{
     background-color: #225686;
-    color: White;
+    padding: 1rem;
     border-radius: 50px;
+    color: white;
 }
-nav a{
+nav p a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
+}
+.main{
+    display: flex;
+    margin: 2rem;
+    gap: 1rem;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 1rem;
+}
+.equipment_list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255, 0.8);
+
+}
+.equipment_list ul{
+    list-style: none;
+}
+.equipment_list li{
+    padding-bottom: 2rem;
+}
+.equipment_list li:last-child{
+    padding-bottom: 0rem;
+}
+.item_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.available_amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%; 
+}
+.rent_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.item_to_rent{
+    display: flex;
+    justify-content: space-between;
+}
+.item_img_wrapper{
+    display: flex;
+    justify-content: center;
+    width: 12.5%;
+}
+.item_img_wrapper img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
 }
