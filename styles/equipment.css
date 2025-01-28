@@ -15,8 +15,6 @@ body {
 }
 header{
     display: flex;
-    width: 100vw;
-    height: fit-content;
 }
 nav{
     display: flex;
@@ -31,6 +29,10 @@ nav ul{
 }
 nav ul li{
     display: inline;
+    padding-right: 2rem;
+}
+nav ul li:last-child{
+    padding-right: 0rem;
 }
 nav ul li a{
     text-decoration: none;
@@ -44,6 +46,7 @@ nav p{
     padding: 1rem;
     border-radius: 50px;
     color: white;
+    text-align: center;
 }
 nav p a{
     text-decoration: none;
@@ -68,6 +71,35 @@ nav p a{
     background-color: rgb(255, 255, 255, 0.8);
 
 }
+
+.items_table{
+    display: flex;
+    justify-content: space-between;
+}
+.image_title{
+    display: flex;
+    justify-content: center;
+    width: 12.5%;
+}
+.item_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.availability_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%; 
+}
+.rent_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
 .equipment_list ul{
     list-style: none;
 }
@@ -108,4 +140,17 @@ nav p a{
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
+}
+.item_to_rent button{
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(0, 0, 0,);
+}
+.item_to_rent button:hover{
+    transform: scale(1.05);
+    color: rgb(0, 0, 0, 0.75);
+    cursor: pointer;
 }
